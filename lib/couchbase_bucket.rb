@@ -11,7 +11,7 @@ module Couchbase
     #   be retried from scratch multiple times until they are successful.
     #
     #   This method will return the final state of the saved doc.
-    #   The caller shoudl use this afterward, instead of the object it has
+    #   The caller should use this afterward, instead of the object it has
     #   passed in to the method call.
     #
     def update_with_retry(key, doc, &block)

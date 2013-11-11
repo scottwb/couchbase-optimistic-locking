@@ -5,7 +5,7 @@ describe Couchbase::Bucket do
   describe "#update_with_retry" do
     before :each do
       @key    = "test-object"
-      @client = Couchbase.connect(:bucket => "barca", :hostname => "localhost")
+      @client = Couchbase.connect(:bucket => "my_bucket", :hostname => "localhost")
       @client.delete(@key)
       @client.set(@key, {'counter' => 1})
     end
